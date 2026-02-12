@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="colorPrimary" type="color">@color/gold</item>
+    <item name="coloronPrimary" type="color">@color/black</item>
+    <item name="colorSecondary" type="color">@color/black</item>
+    <item name="coloronSecondary" type="color">@color/gold</item>
+    <style name="Theme.Islami_project" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="bodyMedium">
+        <item name="android:textColor">@color/white</item>
+        <item name= "android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bodySmall">
+        <item name="android:textColor">@color/white</item>
+        <item name= "android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="titelMedium">
+        <item name="android:textColor">@color/gold</item>
+        <item name= "android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="titelLarge">
+        <item name="android:textColor">@color/gold</item>
+        <item name= "android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="titelSmall">
+            <item name="android:textColor">@color/black</item>
+            <item name= "android:textSize">16sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+    <style name="headerSmall">
+                <item name="android:textColor">@color/black</item>
+                <item name= "android:textSize">24sp</item>
+                <item name="android:textStyle">bold</item>
+            </style>
+
+</resources>
