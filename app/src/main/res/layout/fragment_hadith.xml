@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.theme.main.fragments.hadith.HadithFragment"
+    tools:context=".ui.theme.Screens.main.fragments.hadith.HadithFragment"
     android:background="@drawable/hadeethbg">
 
 

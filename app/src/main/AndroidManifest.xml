@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Islami_project">
         <activity
-            android:name=".ui.theme.main.MainActivity"
+            android:name=".ui.theme.Screens.Sura_Details.Sura_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.Screens.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Islami_project">

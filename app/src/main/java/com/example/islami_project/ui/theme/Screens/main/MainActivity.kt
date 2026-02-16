@@ -1,4 +1,4 @@
-package com.example.islami_project.ui.theme.main
+package com.example.islami_project.ui.theme.Screens.main
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,8 +6,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.islami_project.R
-import com.example.islami_project.ui.theme.main.fragments.hadith.HadithFragment
-import com.example.islami_project.ui.theme.main.fragments.quran.QuranFragment
+import com.example.islami_project.ui.theme.Screens.main.fragments.hadith.HadithFragment
+import com.example.islami_project.ui.theme.Screens.main.fragments.quran.QuranFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
