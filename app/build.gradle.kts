@@ -6,6 +6,11 @@ plugins {
 
 android {
     namespace = "com.example.islami_project"
+    sourceSets {
+        getByName("main") {
+            assets.srcDirs("src/main/Assets")
+        }
+    }
     compileSdk {
         version = release(36)
     }
@@ -54,6 +59,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.generativeai)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

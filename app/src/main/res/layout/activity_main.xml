@@ -5,13 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
     tools:context=".ui.theme.Screens.main.MainActivity">
+
+    <View
+        android:id="@+id/status_bar_gold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status_bar_gold"
         app:layout_constraintBottom_toTopOf="@id/navbar"
         />
     

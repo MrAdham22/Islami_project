@@ -1,5 +1,6 @@
 package com.example.islami_project.ui.theme.Screens.main.fragments.quran
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.islami_project.R
 import com.example.islami_project.ui.theme.Model.SuraDM
 
-class SurasAdapter (val suras : List<SuraDM>) : RecyclerView.Adapter<SurasAdapter.surasViewHolder>() {
+class SurasAdapter (val suras : List<SuraDM> , val onClick : (SuraDM) -> Unit) : RecyclerView.Adapter<SurasAdapter.surasViewHolder>() {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -27,7 +28,10 @@ class SurasAdapter (val suras : List<SuraDM>) : RecyclerView.Adapter<SurasAdapte
         holder.suraNameEN.text = sura.suranameEn
         holder.suraNameAR.text = sura.suranameAr
         holder.suraVerses.text = "${sura.versesNumber} Verses"
-
+        holder.itemView.setOnClickListener {
+            onClick(sura)
+            Log.e( "sura adapter" , "$sura")
+        }
     }
 
     override fun getItemCount(): Int = suras.size

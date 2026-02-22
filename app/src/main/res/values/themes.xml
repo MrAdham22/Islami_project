@@ -6,6 +6,9 @@
         <item name="colorOnPrimary">@color/black</item>
         <item name="colorSecondary">@color/black</item>
         <item name="colorOnSecondary">@color/gold</item>
+        <item name="android:statusBarColor">@color/gold</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
 
