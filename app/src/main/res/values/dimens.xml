@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Carousel: horizontal margin so first/last cards can scroll to center -->
+    <dimen name="carousel_margin_horizontal">48dp</dimen>
+    <!-- Hadith card width for center-aligned carousel -->
+    <dimen name="carousel_hadith_card_width">320dp</dimen>
+</resources>

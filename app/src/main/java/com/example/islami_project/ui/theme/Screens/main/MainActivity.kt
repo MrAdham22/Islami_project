@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import com.example.islami_project.R
 import com.example.islami_project.ui.theme.Screens.main.fragments.hadith.HadethFragment
 import com.example.islami_project.ui.theme.Screens.main.fragments.quran.QuranFragment
+import com.example.islami_project.ui.theme.Screens.main.fragments.sebha.SebhaFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -33,8 +34,7 @@ class MainActivity : AppCompatActivity() {
                 showFragment(HadethFragment())
             }
             R.id.sebha_Tab-> {
-                Toast.makeText(this, "Task", Toast.LENGTH_SHORT).show()
-                return@setOnItemSelectedListener false
+                showFragment(SebhaFragment())
             }
             R.id.radio_Tab -> {
                 Toast.makeText(this, "not impleneted yet", Toast.LENGTH_SHORT).show()

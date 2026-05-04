@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.theme.Screens.main.fragments.sebha.SebhaFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.theme.Screens.main.fragments.sebha.SebhaFragment"
+    android:background="@drawable/sebha_bg"
+    android:padding="30dp"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/islami_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/sebhaHead"
+        android:layout_width="93dp"
+        android:layout_height="106dp"
+        android:src="@drawable/sebha_head"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintBottom_toTopOf="@id/sebha_Body"
+        app:layout_constraintTop_toTopOf="@id/sebha_Body"
+        app:layout_constraintStart_toStartOf="@id/sebha_Body"
+        app:layout_constraintEnd_toEndOf="@id/sebha_Body"
+        />
+    <ImageView
+        android:id="@+id/sebha_Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sebha_body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tasbehName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toTopOf="@id/tasbehNumber"
+        app:layout_constraintEnd_toEndOf="@id/sebha_Body"
+        app:layout_constraintStart_toStartOf="@id/sebha_Body"
+        app:layout_constraintTop_toTopOf="@id/sebha_Body"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="sobhan allah" />
+    <TextView
+        android:id="@+id/tasbehNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tasbehName"
+        app:layout_constraintBottom_toBottomOf="@id/sebha_Body"
+        app:layout_constraintStart_toStartOf="@id/sebha_Body"
+        app:layout_constraintEnd_toEndOf="@id/sebha_Body"
+        tools:text="30"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:layout_marginTop="10dp"
+        />
 
-</FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
